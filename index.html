@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Typing Garden</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="c"></canvas>
+<header class="bar card">
+  <div class="stats"><span>Words <b id="sw">0</b></span><span>WPM <b id="sp">0</b></span><span>Accuracy <b id="sa">100%</b></span><span>Streak <b id="ss">0</b></span></div>
+  <div class="ctl"><label><input type="checkbox" id="wilt" checked> Wilting</label><button id="clear">Clear garden</button></div>
+</header>
+<main>
+  <p id="hint">Type the word below to plant your first seed.</p>
+  <div id="word" class="card" aria-label="Word to type"></div>
+</main>
+<p class="foot">Mistakes make the garden wilt a little. Keep typing and it perks back up.</p>
+<input id="typer" autofocus autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type here">
+<script src="garden.js"></script>
+</body></html>
